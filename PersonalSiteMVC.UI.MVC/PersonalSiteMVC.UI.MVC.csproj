@@ -290,7 +290,6 @@
     <Content Include="_Archive\assets\vendor\waypoints\jquery.waypoints.min.js" />
     <Content Include="_Archive\index.html" />
     <Content Include="Content\assets\applications\ConsoleApp.zip" />
-    <Content Include="Content\assets\applications\Sarah Ledford Resume IT.pdf" />
     <Content Include="Content\assets\img\site.webmanifest" />
     <Content Include="Content\assets\vendor\boxicons\fonts\boxicons.eot" />
     <Content Include="Content\assets\vendor\boxicons\fonts\boxicons.ttf" />
@@ -301,6 +300,7 @@
     <Content Include="Content\assets\vendor\jquery\jquery.min.map" />
     <Content Include="Content\assets\vendor\owl.carousel\LICENSE" />
     <Content Include="Content\assets\vendor\owl.carousel\README.md" />
+    <Content Include="Content\assets\applications\Sarah Ledford Resume IT.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
