@@ -127,6 +127,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="android-chrome-192x192.png" />
+    <Content Include="android-chrome-512x512.png" />
+    <Content Include="apple-touch-icon.png" />
     <Content Include="Content\assets\css\style.css" />
     <Content Include="Content\assets\img\android-chrome-192x192.png" />
     <Content Include="Content\assets\img\android-chrome-512x512.png" />
@@ -203,6 +206,8 @@
     <Content Include="Content\assets\vendor\venobox\venobox.min.css" />
     <Content Include="Content\assets\vendor\venobox\venobox.min.js" />
     <Content Include="Content\assets\vendor\waypoints\jquery.waypoints.min.js" />
+    <Content Include="favicon-16x16.png" />
+    <Content Include="favicon-32x32.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -332,6 +337,7 @@
     <Content Include="_Archive\assets\vendor\jquery\jquery.min.map" />
     <Content Include="_Archive\assets\vendor\owl.carousel\LICENSE" />
     <Content Include="_Archive\assets\vendor\owl.carousel\README.md" />
+    <Content Include="site.webmanifest" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
