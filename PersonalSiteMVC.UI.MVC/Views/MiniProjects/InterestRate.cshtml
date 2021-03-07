@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Interest Rate Calculator";
+}
+
+
+<div class="labContainer">
+
+    <h2>@ViewBag.Title</h2>
+
+    <form method="get">
+
+        <h4>Please enter a beginning balance, an interest rate, and a number of years. The amount of accrued interest will be calculated and displayed.</h4>
+        <div class="row">
+            <div class="col-md-4">Beginning balance: $<input type="text" name="Balance" /></div>
+            <div class="col-md-3">Interest Rate: <input type="text" name="InterestRate" />%</div>
+            <div class="col-md-3">Years: <input type="text" name="Years" /></div>
+            <div class="col-md-1"><input type="submit" value="Calculate!" class="btn btn-success" /></div>
+            <div class="col-md-1">
+                @Html.ActionLink("Clear", "InterestRate", "MiniProjects", null, new { @class = "btn btn-danger" })
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+    @if (ViewBag.Answer != null)
+    {
+        <h2 class="answer text-center">@ViewBag.Answer</h2>
+    }
+
+    <a href="@Url.Action("Index", "MiniProjects")">Go Back</a>
+
+</div>

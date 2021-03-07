@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Min, Max, Avg";
+}
+
+<div class="labContainer">
+    <h2>@ViewBag.Title</h2>
+
+    <form method="get">
+        <h4>Please provide 5 numbers and I will run a calculation on them.</h4>
+        <div class="row">
+            <div class="col-md-2">First Number: <input type="number" name="num1" /></div>
+            <div class="col-md-2">Second Number: <input type="number" name="num2" /></div>
+            <div class="col-md-2">Third Number: <input type="number" name="num3" /></div>
+            <div class="col-md-2">Fourth Number: <input type="number" name="num4" /></div>
+            <div class="col-md-2">Fifth (last) Number: <input type="number" name="num5" /></div>
+            <div class="col-md-1"><input type="submit" value="Calculate!" class="btn btn-success" /></div>
+            <div class="col-md-1">
+                @Html.ActionLink("Clear", "MinMaxAvg", "MiniProjects", null, new { @class = "btn btn-danger" })
+            </div>
+
+        </div>
+
+
+
+
+    </form>
+
+    @if (ViewBag.Answer != null)
+    {
+        <h2 class="answer text-center">@Html.Raw(ViewBag.Answer)</h2>
+    }
+    <a href="@Url.Action("Index", "MiniProjects")">Go Back</a>
+
+</div>

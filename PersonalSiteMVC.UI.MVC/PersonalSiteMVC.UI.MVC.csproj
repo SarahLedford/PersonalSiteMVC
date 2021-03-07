@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MiniProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -130,6 +131,7 @@
     <Content Include="android-chrome-192x192.png" />
     <Content Include="android-chrome-512x512.png" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="Content\assets\css\custom.css" />
     <Content Include="Content\assets\css\style.css" />
     <Content Include="Content\assets\img\android-chrome-192x192.png" />
     <Content Include="Content\assets\img\android-chrome-512x512.png" />
@@ -141,18 +143,7 @@
     <Content Include="Content\assets\img\portfolio\AlienContainmentImg.jpg" />
     <Content Include="Content\assets\img\portfolio\close-up-wool-knitting-wooden-background2.jpg" />
     <Content Include="Content\assets\img\portfolio\ComingSoon.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-1.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-2.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-3.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-4.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-5.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-6.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-7.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-8.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-9.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-details-1.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-details-2.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-details-3.jpg" />
+    <Content Include="Content\assets\img\portfolio\MiniProjects.jpg" />
     <Content Include="Content\assets\img\SarahLProfessional.jpg" />
     <Content Include="Content\assets\img\testimonials\centriqlogo.png" />
     <Content Include="Content\assets\img\testimonials\CourtneyC.jpg" />
@@ -338,6 +329,13 @@
     <Content Include="_Archive\assets\vendor\owl.carousel\LICENSE" />
     <Content Include="_Archive\assets\vendor\owl.carousel\README.md" />
     <Content Include="site.webmanifest" />
+    <Content Include="Views\MiniProjects\WaterLab.cshtml" />
+    <Content Include="Views\MiniProjects\Index.cshtml" />
+    <Content Include="Views\MiniProjects\InterestRate.cshtml" />
+    <Content Include="Views\MiniProjects\MinMaxAvg.cshtml" />
+    <Content Include="Views\MiniProjects\MadLib.cshtml" />
+    <Content Include="Views\MiniProjects\ChangeLab.cshtml" />
+    <Content Include="Views\MiniProjects\TempConverter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

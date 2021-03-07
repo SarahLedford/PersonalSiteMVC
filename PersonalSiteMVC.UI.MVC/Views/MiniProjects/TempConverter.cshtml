@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Temperature Converter";
+}
+
+<div class="labContainer">
+    <h2>@ViewBag.Title</h2>
+
+    <form method="get">
+        <p>Please enter a temperature in the appropriate field to have it converted to celsius or fahrenheit</p>
+        <div class="row">
+            <input class="col-md-3" type="number" placeholder="Celsius" name="CTemp" />
+            <div class="col-md-1"><input type="submit" value="Submit" class="btn btn-success" /></div>
+            <div class="col-md-1">
+                @Html.ActionLink("Clear", "TempConverter", "MiniProjects", null, new { @class = "btn btn-danger" })
+            </div>
+
+            <input class="col-md-3" type="number" placeholder="Fahrenheit" name="FTemp" />
+            <div class="col-md-1"><input type="submit" value="Submit" class="btn btn-success" /></div>
+            <div class="col-md-1">
+                @Html.ActionLink("Clear", "TempConverter", "MiniProjects", null, new { @class = "btn btn-danger" })
+            </div>
+        </div>
+    </form>
+
+    @if (ViewBag.Answer != null)
+    {
+        <h4 class="answer text-center">@Html.Raw(ViewBag.Answer)</h4>
+    }
+    <a href="@Url.Action("Index", "MiniProjects")">Go Back</a>
+
+</div>

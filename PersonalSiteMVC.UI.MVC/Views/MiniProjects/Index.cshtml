@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Mini Projects";
+}
+
+<div class="labContainer">
+    <h2>@ViewBag.Title</h2>
+
+    <ul>
+        <li>@Html.ActionLink("Water Calculator", "WaterLab", "MiniProjects")</li>
+        <li>@Html.ActionLink("Interest Rate Calculator", "InterestRate", "MiniProjects")</li>
+        <li>@Html.ActionLink("Min, Max, Avg", "MinMaxAvg", "MiniProjects")</li>
+        <li>@Html.ActionLink("MadLib", "MadLib", "MiniProjects")</li>
+        <li>@Html.ActionLink("Change Calculator", "ChangeLab", "MiniProjects")</li>
+        <li>@Html.ActionLink("Temperature Converter", "TempConverter", "MiniProjects")</li>
+    </ul>
+
+
+    <a href="@Url.Action("Index", "Home")">Go Back</a>
+
+</div>
+
