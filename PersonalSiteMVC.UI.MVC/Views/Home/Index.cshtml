@@ -454,27 +454,35 @@
                 </div>
             </div>
             <div class="col-lg-5 col-md-8">
-                <form class="contactForm" action="#" method="get" onsubmit="validateForm(event)">
-                    <div class="form-group">
-                        <input type="text" id="tbName" name="name" class="form-control" placeholder="Your name" />
-                        <span id="errorName" class="invalid"></span>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
-                        <span id="errorEmail" class="invalid"></span>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
-                        <span id="errorSubject" class="invalid"></span>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="tbMessage" name="message" class="form-control"
-                                  placeholder="Message"></textarea>
-                        <span id="errorMessage" class="invalid"></span>
-                    </div>
-                    <div class="text-center"><button class="submitButton" type="submit">Send Message</button></div>
-                </form>
+                <div id="contactForm">
+                    @Html.Partial("ContactAjax", new PersonalSiteMVC.UI.MVC.Models.ContactViewModel())
+                </div>
+                <div id="contactConfirm">
+                    @Html.Partial("EmailConfirm", new PersonalSiteMVC.UI.MVC.Models.ContactViewModel())
+                </div>
             </div>
+            @*<div class="col-lg-5 col-md-8">
+            <form class="contactForm" action="#" method="get" onsubmit="validateForm(event)">
+                <div class="form-group">
+                    <input type="text" id="tbName" name="name" class="form-control" placeholder="Your name" />
+                    <span id="errorName" class="invalid"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
+                    <span id="errorEmail" class="invalid"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                    <span id="errorSubject" class="invalid"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="tbMessage" name="message" class="form-control"
+                              placeholder="Message"></textarea>
+                    <span id="errorMessage" class="invalid"></span>
+                </div>
+                <div class="text-center"><button class="submitButton" type="submit">Send Message</button></div>
+            </form>
+        </div>*@
 
         </div>
 

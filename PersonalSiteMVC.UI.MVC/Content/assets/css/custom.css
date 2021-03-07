@@ -6,3 +6,7 @@
     .labContainer h2, .labContainer h3, .labContainer p, .labContainer input, .labContainer h4 {
         margin-bottom: 1em;
     }
+
+    #contactConfirm{
+        display:none;
+    }

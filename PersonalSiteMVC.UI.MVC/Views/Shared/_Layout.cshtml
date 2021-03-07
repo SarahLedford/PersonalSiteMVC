@@ -21,13 +21,13 @@
     <!-- Font Awesome -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+
     <!-- Vendor CSS Files -->
     <link href="~/Content/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="~/Content/assets/vendor/capicon/font/style.css" rel="stylesheet" />
 
 
 
@@ -81,7 +81,12 @@
 
         <!-- ======= About Section ======= -->
         @RenderBody()
-
+        @*<div id="contactForm">
+                @Html.Partial("ContactAjax", new PersonalSiteMVC.UI.MVC.Models.ContactViewModel())
+            </div>
+            <div id="contactConfirm">
+                @Html.Partial("EmailConfirm", new PersonalSiteMVC.UI.MVC.Models.ContactViewModel())
+            </div>*@
 
 
     </main><!-- End #main -->
@@ -112,25 +117,45 @@
     <script src="~/Content/assets/vendor/counterup/counterup.min.js"></script>
     <script src="~/Content/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="~/Content/assets/vendor/venobox/venobox.min.js"></script>
-    <script src="~/Content/assets/vendor/jquery.lettering-0.6.1.min.js"></script>
+
     <script src="~/Content/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <!-- Lettering.js -->
+    <!-- Template Main JS File -->
+    <script src="~/Content/assets/js/main.js"></script>
+    <script src="~/Content/assets/js/validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <script src="~/Content/assets/vendor/jquery.lettering-0.6.1.min.js"></script>
 
 
+    @RenderSection("scripts", false)
 
     <script>
+
+        $("#ContactCreateForm").submit(function (e) {
+            var formData = $(this).serializeArray();
+            e.preventDefault();
+            $.ajax({
+                url: '@Url.Action("ContactAjax", "Home")',
+                type: 'POST',
+                data: formData,
+                datatype: 'json',
+                success: function (data) {
+                    $("#contactForm").hide();
+                    $("#contactConfirm").show();
+                }
+
+            });
+        });
+
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
+
         $(document).ready(function () {
             $(".text-light").lettering('words');
             $(".hi").lettering();
         });
     </script>
-
-    <!-- Template Main JS File -->
-    <script src="~/Content/assets/js/main.js"></script>
-    <script src="~/Content/assets/js/validate.js"></script>
 </body>
 
 </html>
