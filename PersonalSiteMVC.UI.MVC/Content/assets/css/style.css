@@ -18,7 +18,7 @@ a {
 }
 
     a:hover {
-        color: #dd5a92;
+        color: white;
         text-decoration: none;
     }
 
@@ -706,7 +706,11 @@ section {
     text-align: center;
     border-radius: 50px;
     padding: 10px 24px;
+    transition:.4s;
 }
+    .resumeDownload:hover {
+        background: #FC9520;
+    }
 
 /* Modal Content */
 .modal-content {
