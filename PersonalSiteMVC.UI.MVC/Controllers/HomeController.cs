@@ -20,6 +20,11 @@ namespace PersonalSiteMVC.UI.MVC.Controllers
         [HttpPost]
         public JsonResult ContactAjax(ContactViewModel cvm)
         {
+            //if (!ModelState.IsValid)
+            //{
+            //    return Json(cvm);
+            //}
+
             string body = $"You have received a message from {cvm.Name}<br />{cvm.Message}<br />From email address: <strong>{cvm.Email}</strong>";
 
             MailMessage m = new MailMessage("admin@sarahledford.com", "Sarah_Ledford@outlook.com", cvm.Subject, body);
