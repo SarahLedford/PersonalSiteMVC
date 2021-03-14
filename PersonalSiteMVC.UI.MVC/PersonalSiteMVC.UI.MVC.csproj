@@ -147,6 +147,7 @@
     <Content Include="Content\assets\img\portfolio\MiniProjects.jpg" />
     <Content Include="Content\assets\img\SarahLProfessional.jpg" />
     <Content Include="Content\assets\img\testimonials\centriqlogo.png" />
+    <Content Include="Content\assets\img\testimonials\ColtonW.png" />
     <Content Include="Content\assets\img\testimonials\CourtneyC.jpg" />
     <Content Include="Content\assets\img\testimonials\JHickman.jpg" />
     <Content Include="Content\assets\img\testimonials\placeholderForLinksClassmates.png" />
@@ -329,7 +330,6 @@
     <Content Include="_Archive\assets\vendor\jquery\jquery.min.map" />
     <Content Include="_Archive\assets\vendor\owl.carousel\LICENSE" />
     <Content Include="_Archive\assets\vendor\owl.carousel\README.md" />
-    <Content Include="site.webmanifest" />
     <Content Include="Views\MiniProjects\WaterLab.cshtml" />
     <Content Include="Views\MiniProjects\Index.cshtml" />
     <Content Include="Views\MiniProjects\InterestRate.cshtml" />

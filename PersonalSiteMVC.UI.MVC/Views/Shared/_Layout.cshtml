@@ -13,7 +13,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
@@ -56,23 +55,14 @@
     <header id="header">
         <div class="container d-flex align-items-center">
 
-            <div class="logo mr-auto">
-                <h1 class="text-light"><a href="index.html"><span>Sarah Ledford</span></a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-            </div>
+                <div class="logo mr-auto">
+                    <h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Sarah Ledford</span></a></h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                </div>            
 
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="@Url.Action("Index","Home")">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Links</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            @RenderSection("nav", false)
 
-                </ul>
-            </nav><!-- .nav-menu -->
 
         </div>
     </header><!-- End Header -->
@@ -108,6 +98,7 @@
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
+    @RenderSection("diffScripts", false)
     <!-- Vendor JS Files -->
     @*<script src="~/Content/assets/vendor/jquery/jquery.min.js"></script>*@
     <script src="~/Content/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

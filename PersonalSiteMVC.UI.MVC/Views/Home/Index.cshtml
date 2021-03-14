@@ -1,4 +1,18 @@
-﻿<section id="about" class="about">
+﻿@section nav{
+    <nav class="nav-menu d-none d-lg-block">
+        <ul>
+            <li class="active"><a href="@Url.Action("Index","Home")">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Links</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav><!-- .nav-menu -->
+}
+
+<section id="about" class="about">
     <div class="container">
 
         <div class="row no-gutters">
@@ -276,12 +290,12 @@
                         <p>Small projects utilizing MVC</p>
                     </div>
                     <div class="portfolio-links">
-                       
+
                         <a href="@Url.Action("Index", "MiniProjects")" title="View Projects" target="_blank"><i class="bx bx-link"></i></a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                 <div class="portfolio-wrap">
                     <img src="~/Content/assets/img/portfolio/ComingSoon.jpg" class="img-fluid" alt="Coming soon placeholder">
@@ -356,26 +370,30 @@
         </div>
 
         <div class="owl-carousel testimonials-carousel">
-            <!-- <div class="testimonial-item">
-                <a href="http://www.courtneycrespo.com/">
-                    <img src="~/Content/assets/img/testimonials/CourtneyC.jpg" class="testimonial-img" alt="">
+            <div class="testimonial-item">
+                <a href="http://www.courtneycrespo.com/" title="Visit Site" target="_blank">
+                    <img src="~/Content/assets/img/testimonials/CourtneyC.jpg" class="testimonial-img" alt="Courtney Crespo">
                     <h3>Courtney Crespo</h3>
                     <h4>Full Stack Web Dev</h4>
                 </a>
-            </div> -->
-            <!--
-                                <div class="testimonial-item">
-                                    <img src="~/Content/assets/img/testimonials/placeholderForLinksClassmates.png" class="testimonial-img" alt="">
-                                    <h3>CJ Discavage</h3>
-                                    <h4>Full Stack Web Dev</h4>
-                                </div>
+            </div>
 
-                                <div class="testimonial-item">
-                                    <img src="~/Content/assets/img/testimonials/placeholderForLinksClassmates.png" alt="">
-                                    <h3>Colton Weeks</h3>
-                                    <h4>Full Stack Web Dev</h4>
-                                </div>
-            -->
+            <div class="testimonial-item">
+                <a href="http://cjdisc.net/" title="Visit Site" target="_blank">
+                    <img src="~/Content/assets/img/testimonials/placeholderForLinksClassmates.png" class="testimonial-img" alt="Profile of CJ Discavage">
+                    <h3>CJ Discavage</h3>
+                    <h4>Full Stack Web Dev</h4>
+                </a>
+            </div>
+
+            <div class="testimonial-item">
+                <a href="#" title="Visit Site" target="_blank">
+                    <img src="~/Content/assets/img/testimonials/ColtonW.png" class="testimonial-img" alt="Profile of Colton Weeks">
+                    <h3>Colton Weeks</h3>
+                    <h4>Full Stack Web Dev</h4>
+                </a>
+            </div>
+
             <div class="testimonial-item">
                 <a href="http://www.jordanhickman.com/" title="Visit Site" target="_blank">
                     <img src="~/Content/assets/img/testimonials/JHickman.jpg" class="testimonial-img" alt="Profile of Jordan Hickman">
@@ -393,17 +411,17 @@
                 </a>
 
             </div>
-            <!--  <div class="testimonial-item">
-                                    <a href="http://www.codebywes.com/" title="Visit Site" target="_blank">
-                                        <img src="~/Content/assets/img/testimonials/WesNelson (1).jpg" class="testimonial-img" alt="">
-                                        <h3>Wesley Nelson</h3>
-                                        <h4>Full Stack Web Dev</h4>
-                                    </a>
-                                </div>
-            -->
+            <div class="testimonial-item">
+                <a href="http://www.codebywes.com/" title="Visit Site" target="_blank">
+                    <img src="~/Content/assets/img/testimonials/WesNelson (1).jpg" class="testimonial-img" alt="Profile of Wesley Nelson">
+                    <h3>Wesley Nelson</h3>
+                    <h4>Full Stack Web Dev</h4>
+                </a>
+            </div>
+
             <div class="testimonial-item">
                 <a href="http://www.centriq.com/" title="Visit Site" target="_blank">
-                    <img src="~/Content/assets/img/testimonials/centriqlogo.png" class="testimonial-img" alt="">
+                    <img src="~/Content/assets/img/testimonials/centriqlogo.png" class="testimonial-img" alt="Centriq Training Logo">
                     <h3>Centriq Training</h3>
                     <h4>Education</h4>
                 </a>
@@ -462,27 +480,27 @@
                 </div>
             </div>
             @*<div class="col-lg-5 col-md-8">
-            <form class="contactForm" action="#" method="get" onsubmit="validateForm(event)">
-                <div class="form-group">
-                    <input type="text" id="tbName" name="name" class="form-control" placeholder="Your name" />
-                    <span id="errorName" class="invalid"></span>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
-                    <span id="errorEmail" class="invalid"></span>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
-                    <span id="errorSubject" class="invalid"></span>
-                </div>
-                <div class="form-group">
-                    <textarea id="tbMessage" name="message" class="form-control"
-                              placeholder="Message"></textarea>
-                    <span id="errorMessage" class="invalid"></span>
-                </div>
-                <div class="text-center"><button class="submitButton" type="submit">Send Message</button></div>
-            </form>
-        </div>*@
+                    <form class="contactForm" action="#" method="get" onsubmit="validateForm(event)">
+                        <div class="form-group">
+                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Your name" />
+                            <span id="errorName" class="invalid"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
+                            <span id="errorEmail" class="invalid"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                            <span id="errorSubject" class="invalid"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="tbMessage" name="message" class="form-control"
+                                      placeholder="Message"></textarea>
+                            <span id="errorMessage" class="invalid"></span>
+                        </div>
+                        <div class="text-center"><button class="submitButton" type="submit">Send Message</button></div>
+                    </form>
+                </div>*@
 
         </div>
 
