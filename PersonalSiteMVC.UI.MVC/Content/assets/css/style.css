@@ -531,7 +531,6 @@ section {
             }
 
 .about .image {
-    /*background: url("../img/me.jpg") center center no-repeat;*/
     background: url('../img/SarahLProfessional.jpg') center center no-repeat;
     background-size: cover;
     min-height: 400px;
@@ -710,6 +709,7 @@ section {
 }
     .resumeDownload:hover {
         background: #FC9520;
+        color:white;
     }
 
 /* Modal Content */
