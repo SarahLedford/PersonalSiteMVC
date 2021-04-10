@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.1267
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalSiteMVC.UI.MVC", "PersonalSiteMVC.UI.MVC\PersonalSiteMVC.UI.MVC.csproj", "{D6A0616F-7164-4B41-BE74-2BDC5140D4DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{777E6978-A98E-4944-BD84-90EE771B43BD}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
