@@ -132,6 +132,7 @@
     <Content Include="android-chrome-192x192.png" />
     <Content Include="android-chrome-512x512.png" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="Content\assets\img\portfolio\OldSchool.jpg" />
     <Content Include="Content\assets\css\custom.css" />
     <Content Include="Content\assets\css\style.css" />
     <Content Include="Content\assets\img\android-chrome-192x192.png" />
