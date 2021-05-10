@@ -22,17 +22,19 @@
 
 
     <!-- Vendor CSS Files -->
-    <link href="~/Content/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    @*<link href="~/Content/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="~/Content/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/Content/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">*@
 
 
 
     <!-- Template Main CSS File -->
-    <link href="~/Content/assets/css/style.css" rel="stylesheet">
-    <link href="~/Content/assets/css/custom.css" rel="stylesheet" />
+    @*<link href="~/Content/assets/css/style.min.css" rel="stylesheet">
+    <link href="~/Content/assets/css/custom.min.css" rel="stylesheet" />*@
+
+    @Styles.Render("~/Content/css")
 
     <!-- =======================================================
     * Template Name: Lonely - v2.3.1
@@ -55,11 +57,11 @@
     <header id="header">
         <div class="container d-flex align-items-center">
 
-                <div class="logo mr-auto">
-                    <h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Sarah Ledford</span></a></h1>
-                    <!-- Uncomment below if you prefer to use an image logo -->
-                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-                </div>            
+            <div class="logo mr-auto">
+                <h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Sarah Ledford</span></a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
 
             @RenderSection("nav", false)
 
@@ -101,22 +103,22 @@
     @RenderSection("diffScripts", false)
     <!-- Vendor JS Files -->
     @*<script src="~/Content/assets/vendor/jquery/jquery.min.js"></script>*@
-    <script src="~/Content/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/Content/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="~/Content/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-    <script src="~/Content/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="~/Content/assets/vendor/counterup/counterup.min.js"></script>
-    <script src="~/Content/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="~/Content/assets/vendor/venobox/venobox.min.js"></script>
+    @*<script src="~/Content/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="~/Content/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+            <script src="~/Content/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+            <script src="~/Content/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+            <script src="~/Content/assets/vendor/counterup/counterup.min.js"></script>
+            <script src="~/Content/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+            <script src="~/Content/assets/vendor/venobox/venobox.min.js"></script>
 
-    <script src="~/Content/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <!-- Template Main JS File -->
-    <script src="~/Content/assets/js/main.js"></script>
-    <script src="~/Content/assets/js/validate.js"></script>
-    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>*@
+            <script src="~/Content/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+            <!-- Template Main JS File -->
+            <script src="~/Content/assets/js/main.min.js"></script>
+            <script src="~/Content/assets/js/validate.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
-    <script src="~/Content/assets/vendor/jquery.lettering-0.6.1.min.js"></script>
-
+        <script src="~/Content/assets/vendor/jquery.lettering-0.6.1.min.js"></script>*@
+    @Scripts.Render("~/bundles/js")
 
     @RenderSection("scripts", false)
 
