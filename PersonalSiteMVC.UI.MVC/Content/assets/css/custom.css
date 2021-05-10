@@ -10,3 +10,10 @@
     #contactConfirm{
         display:none;
     }
+
+@media (min-width: 576px){
+    .modal-content {
+        left: -12.5em;
+        min-width: 60vw;
+    }
+}

@@ -37,7 +37,7 @@ namespace PersonalSiteMVC.UI.MVC.Controllers
 
             SmtpClient client = new SmtpClient("mail.sarahledford.com");
 
-            client.Credentials = new NetworkCredential("admin@sarahledford.com", "aKmS2FhiQp_");
+            client.Credentials = new NetworkCredential("admin@sarahledford.com", "S@r@h123");
 
             try
             {
